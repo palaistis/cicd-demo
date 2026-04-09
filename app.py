@@ -9,6 +9,10 @@ def hello():
 def hello_name(name):
     return f"Hello, {name}!", 200
 
+@app.route("/bye")
+def bye():
+    return "Goodbye from CI/CD pipeline!", 200
+
 @app.route("/health")
 def health():
     return {"status": "ok"}, 200
