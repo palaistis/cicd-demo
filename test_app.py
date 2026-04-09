@@ -10,7 +10,7 @@ def client():
 def test_hello(client):
     r = client.get("/")
     assert r.status_code == 200
-    assert b"Hello" in r.data
+    assert b"Goodbye" in r.data
 
 def test_health(client):
     r = client.get("/health")
