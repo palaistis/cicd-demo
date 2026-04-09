@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello from CI/CD pipeline!", 200
+    return "Hello from CI/CD pipeline staging!", 200
 
 @app.route("/hello/<name>")
 def hello_name(name):
