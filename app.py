@@ -5,6 +5,10 @@ app = Flask(__name__)
 def hello():
     return "Hello from CI/CD pipeline!", 200
 
+@app.route("/hello/<name>")
+def hello_name(name):
+    return f"Hello, {name}!", 200
+
 @app.route("/health")
 def health():
     return {"status": "ok"}, 200
